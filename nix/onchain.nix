@@ -431,7 +431,7 @@ in
                     + config.pre-commit.installationScript;
                   };
 
-                  inputMap."https://input-output-hk.github.io/cardano-haskell-packages" = liqwid-nix.CHaP;
+                  inputMap."https://input-output-hk.github.io/cardano-haskell-packages" = "${liqwid-nix.CHaP}";
 
                   modules = hackages.modules ++ haskellModules;
                   extra-hackages = hackages.extra-hackages;

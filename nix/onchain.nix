@@ -431,15 +431,15 @@ in
                     + config.pre-commit.installationScript;
                   };
 
-                  inputMap."https://input-output-hk.github.io/ghc-next-packages" = "${liqwid-nix.ghc-next-packages}";
+                  inputMap."https://input-output-hk.github.io/cardano-haskell-packages" = "${liqwid-nix.CHaP}";
 
                   modules = hackages.modules ++ haskellModules;
                   extra-hackages = hackages.extra-hackages;
                   extra-hackage-tarballs = hackages.extra-hackage-tarballs;
                   cabalProjectLocal =
                     ''
-                      repository ghc-next-packages
-                        url: https://input-output-hk.github.io/ghc-next-packages
+                      repository cardano-haskell-packages
+                        url: https://input-output-hk.github.io/cardano-haskell-packages
                         secure: True
                         root-keys:
                         key-threshold: 0

@@ -21,8 +21,8 @@
     iohk-nix.url = "github:input-output-hk/iohk-nix?rev=4848df60660e21fbb3fe157d996a8bac0a9cf2d6";
     iohk-nix.flake = false;
 
-    ghc-next-packages.url = "github:input-output-hk/ghc-next-packages?ref=repo";
-    ghc-next-packages.flake = false;
+    CHaP.url = "github:input-output-hk/cardano-haskell-packages?ref=repo";
+    CHaP.flake = false;
 
     plutarch.url = "github:Plutonomicon/plutarch-plutus?ref=master";
 
